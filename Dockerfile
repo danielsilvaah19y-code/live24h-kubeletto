@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN apk add --no-cache ffmpeg nginx ca-certificates
+RUN apk add --no-cache ffmpeg python3 ca-certificates
 COPY start.sh /start.sh
 COPY playlist.txt /playlist.txt
 RUN chmod +x /start.sh
